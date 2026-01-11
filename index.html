@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canaan Coffee Corner</title>
+
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --card: #ffffff;
+      --text: #1f1f1f;
+      --muted: #666;
+      --accent: #111;
+      --radius: 14px;
+      --shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--card);
+      padding: 32px 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 12px auto 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 48px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .impact strong {
+      display: block;
+      font-size: 2.2rem;
+      margin: 12px 0;
+    }
+
+    .hours {
+      margin-top: 16px;
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .gallery div {
+      height: 180px;
+      background: #eaeaea;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .menu h3 {
+      margin-top: 28px;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .price {
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 24px 16px;
+      margin-top: 48px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+
+    /* Tablet & Desktop Enhancements */
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <!-- Replace logo.png with your logo file -->
+    <img src="logo.png" alt="Canaan Coffee Corner Logo" />
+    <h1>Canaan Coffee Corner</h1>
+    <p>
+      A church coffee ministry created to provide fellowship before Sunday School
+      while fundraising to support Canaan Teens.
+    </p>
+  </header>
+
+  <!-- IMPACT -->
+  <section>
+    <div class="card impact">
+      <h2>Our Mission</h2>
+      <p>
+        Canaan Coffee Corner exists to serve our church family by offering a welcoming
+        space for connection on Sunday mornings while helping fund youth ministry.
+      </p>
+
+      <strong>$500+ Raised</strong>
+
+      <p>
+        Since launching this ministry, profits from every cup have gone directly toward
+        supporting Canaan Teens through events, trips, and ministry opportunities.
+      </p>
+
+      <p class="hours">
+        ☕ Open Sundays · 9:00 AM – 9:45 AM
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <h2>Fellowship & Community</h2>
+    <div class="gallery">
+      <div>Photo Coming Soon</div>
+      <div>Photo Coming Soon</div>
+      <div>Photo Coming Soon</div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section>
+    <h2>Menu</h2>
+    <div class="card menu">
+
+      <h3>Coffee Styles & Sizes</h3>
+      <ul>
+        <li>Iced Coffee <span class="price">$6 (16oz) · $7 (24oz)</span></li>
+        <li>Frappé <span class="price">$6 (16oz) · $7 (24oz)</span></li>
+        <li>Hot Coffee <span class="price">$6 (16oz) · $7 (24oz)</span></li>
+      </ul>
+
+      <h3>Flavors</h3>
+      <ul>
+        <li>Vanilla</li>
+        <li>Caramel</li>
+        <li>Salted Caramel</li>
+        <li>Hazelnut</li>
+        <li>White Chocolate</li>
+        <li>Raspberry</li>
+        <li>Mocha</li>
+      </ul>
+
+      <h3>Espresso</h3>
+      <ul>
+        <li>Single Shot <span class="price">+$1</span></li>
+        <li>Double Shot <span class="price">+$2</span></li>
+      </ul>
+
+      <h3>Milk Options</h3>
+      <ul>
+        <li>Whole Milk</li>
+        <li>Almond Milk</li>
+        <li>Oat Milk</li>
+        <li>Heavy Whipping Cream</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Canaan Coffee Corner · Brewing Fellowship · Supporting Canaan Teens
+    </p>
+  </footer>
+
+</body>
+</html>
